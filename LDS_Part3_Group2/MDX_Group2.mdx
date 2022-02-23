@@ -1,0 +1,43 @@
+-- QUERY 1
+-- Show the total sales for each country and vendor 
+-- and the grand total with respect to the continent.
+
+WITH member GrandTotalContinent as
+sum(([Geography].[Geography_Hierarchy].currentmember.parent,[Vendor].[Name].[All]), [Measures].[Sales Usd])
+
+SELECT {[Measures].[Sales Usd], GrandTotalContinent} on columns,
+nonempty(([Geography].[Continent].[Continent],[Geography].[Geography_Hierarchy].[Country],[Vendor].[Name].[Name])) on rows
+FROM Group2HWMart;
+
+-- QUERY 2
+-- Let diff be the difference between the sales usd and sales currency. 
+-- Show the total sales usd, total sales currency, total diff 
+-- for each month and the running diff starting from the same year in Germany
+
+WITH MEMBER diff AS 
+[Measures].[Sales Usd]-[Measures].[Sales Currency]
+
+MEMBER running_diff AS
+sum(PERIODSTODATE([Time].[Time_Hierarchy].[Year],
+[Time].[Time_Hierarchy].currentmember), diff), FORMAT_STRING="currency"
+
+SELECT {[Measures].[Sales Usd], [Measures].[Sales Currency], 
+diff, running_diff} on columns, 
+([Time].[Year].[Year]*[Time].[Time_Hierarchy].[Month Name]) on rows
+FROM Group2HWMart
+WHERE [Geography].[Country].&[Germany];
+
+-- QUERY 3 
+-- Show the top 5 gpu brands w.r.t the monthly average sales 
+-- for each region in Europe.
+
+WITH MEMBER n_month AS
+count([Time].[Time_Hierarchy].[Month Name])
+MEMBER monthly_average_sales AS
+([Measures].[Sales Usd]) / n_month
+SELECT {monthly_average_sales}  on columns,
+       nonempty(GENERATE([Geography].[Region].[Region], 
+				 topcount(([Geography].[Region].currentmember, 
+				 [Gpu Product].[Brand].[Brand]), 5, monthly_average_sales))) ON rows
+FROM [Group2HWMart]
+WHERE [Geography].[Continent].&[Europe];

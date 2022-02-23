@@ -1,0 +1,77 @@
+geo_code,continent,country,region,currency
+0,Oceania,Australia,new south wales,AUD
+1,Oceania,Australia,northern territory,AUD
+2,Oceania,Australia,queensland,AUD
+3,Oceania,Australia,south australia,AUD
+4,Oceania,Australia,tasmania,AUD
+5,Oceania,Australia,victoria,AUD
+6,Oceania,Australia,western australia,AUD
+7,Europe,Belgium,brussels,EUR
+8,Europe,Belgium,flanders,EUR
+9,Europe,Belgium,wallonia,EUR
+10,America,Canada,atlantic provinces,CAD
+11,America,Canada,british columbia,CAD
+12,America,Canada,ontario,CAD
+13,America,Canada,prairie provinces,CAD
+14,America,Canada,quebec,CAD
+15,America,Canada,the north,CAD
+16,Europe,Germany,baden-wuttemberg,EUR
+17,Europe,Germany,bavaria,EUR
+18,Europe,Germany,berlin,EUR
+19,Europe,Germany,brandenburg,EUR
+20,Europe,Germany,bremen,EUR
+21,Europe,Germany,hamburg,EUR
+22,Europe,Germany,hessen,EUR
+23,Europe,Germany,lower saxony,EUR
+24,Europe,Germany,mecklenburg-vorpommern,EUR
+25,Europe,Germany,north rhine-westphalla,EUR
+26,Europe,Germany,rhineland-palatinate,EUR
+27,Europe,Germany,saarland,EUR
+28,Europe,Germany,saxony,EUR
+29,Europe,Germany,saxony-anhalt,EUR
+30,Europe,Germany,schleswig-holstein,EUR
+31,Europe,Germany,thuringia,EUR
+32,Europe,Spain,analucia,EUR
+33,Europe,Spain,aragon,EUR
+34,Europe,Spain,asturleon,EUR
+35,Europe,Spain,castilla,EUR
+36,Europe,Spain,galicia,EUR
+37,Europe,Spain,vascongadas,EUR
+38,Europe,France,heart of france,EUR
+39,Europe,France,le midi france,EUR
+40,Europe,France,north east france,EUR
+41,Europe,France,north west france,EUR
+42,Europe,France,southwest france,EUR
+43,Europe,France,upland france,EUR
+44,Europe,Ireland,connaught,EUR
+45,Europe,Ireland,leinster,EUR
+46,Europe,Ireland,munster,EUR
+47,Europe,Ireland,ulster,EUR
+48,Europe,Italy,center italy,EUR
+49,Europe,Italy,north italy,EUR
+50,Europe,Italy,south italy,EUR
+51,Oceania,New Zeland,north island-central east,NZD
+52,Oceania,New Zeland,north island-central west,NZD
+53,Oceania,New Zeland,north island-southern,NZD
+54,Oceania,New Zeland,northern island-northern,NZD
+55,Oceania,New Zeland,south island northern,NZD
+56,Oceania,New Zeland,south island-central,NZD
+57,Oceania,New Zeland,south island-southern,NZD
+58,Europe,United Kingdom,east england,GBP
+59,Europe,United Kingdom,east midlands,GBP
+60,Europe,United Kingdom,london,GBP
+61,Europe,United Kingdom,north east england,GBP
+62,Europe,United Kingdom,north west england,GBP
+63,Europe,United Kingdom,scotland,GBP
+64,Europe,United Kingdom,south east england,GBP
+65,Europe,United Kingdom,south west england,GBP
+66,Europe,United Kingdom,wales,GBP
+67,Europe,United Kingdom,west midlands,GBP
+68,Europe,United Kingdom,yorkshire,GBP
+69,America,United States of America,mid-atalntic,USD
+70,America,United States of America,mid-west usa,USD
+71,America,United States of America,north west usa,USD
+72,America,United States of America,north-east usa,USD
+73,America,United States of America,south west usa,USD
+74,America,United States of America,south-east usa,USD
+75,America,United States of America,west usa,USD
